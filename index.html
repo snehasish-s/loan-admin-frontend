@@ -37,16 +37,44 @@
       50% { transform: rotateY(30deg) rotateX(15deg); }
       100% { transform: rotateY(0deg) rotateX(0deg); }
     }
+
+    /* 3D Cube Animation */
+    .cube-3d {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      transform-style: preserve-3d;
+      animation: cube-spin 3s infinite linear;
+      margin: 0 auto;
+    }
+    .cube-3d .face {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #fff;
+      background: linear-gradient(135deg, #1E3A8A 60%, #3B82F6 100%);
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(30,58,138,0.12);
+    }
+    .cube-3d .front  { transform: rotateY(0deg) translateZ(60px); }
+    .cube-3d .back   { transform: rotateY(180deg) translateZ(60px); }
+    .cube-3d .right  { transform: rotateY(90deg) translateZ(60px); }
+    .cube-3d .left   { transform: rotateY(-90deg) translateZ(60px); }
+    .cube-3d .top    { transform: rotateX(90deg) translateZ(60px); }
+    .cube-3d .bottom { transform: rotateX(-90deg) translateZ(60px); }
+    @keyframes cube-spin {
+      0% { transform: rotateX(0deg) rotateY(0deg); }
+      100% { transform: rotateX(360deg) rotateY(360deg); }
+    }
   </style>
 </head>
 <body class="bg-light">
   <main class="container py-5 fade-in">
-    <!-- 3D Animated Card Demo -->
-    <div class="card-3d mb-4">
-      <div class="card-3d-inner">
-        <i class="bi bi-bank2 text-4xl mr-2"></i> Futuristic Loan Dashboard
-      </div>
-    </div>
     <div class="row justify-content-center">
       <div class="col-xl-8 col-lg-10">
         <div class="card shadow-lg mb-4 scale-in">
