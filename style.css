@@ -16,18 +16,18 @@
   color: #fff;
 }
 
-/* Animation Utility Classes */
+/* Futuristic Animation Styles */
 .fade-in {
-  animation: fadeIn 0.8s ease-in;
+  animation: fadeIn 0.7s cubic-bezier(.39,.575,.565,1.000);
 }
 .slide-up {
-  animation: slideUp 0.7s cubic-bezier(.39,.575,.565,1.000);
+  animation: slideUp 0.6s cubic-bezier(.39,.575,.565,1.000);
 }
 .scale-in {
-  animation: scaleIn 0.6s cubic-bezier(.39,.575,.565,1.000);
+  animation: scaleIn 0.5s cubic-bezier(.39,.575,.565,1.000);
 }
 .pulse {
-  animation: pulse 1.2s infinite;
+  animation: pulse 1.2s infinite cubic-bezier(.4,0,.6,1);
 }
 
 @keyframes fadeIn {
@@ -35,16 +35,16 @@
   to { opacity: 1; }
 }
 @keyframes slideUp {
-  from { transform: translateY(40px); opacity: 0; }
+  from { transform: translateY(32px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
 @keyframes scaleIn {
-  from { transform: scale(0.95); opacity: 0; }
+  from { transform: scale(0.98); opacity: 0.7; }
   to { transform: scale(1); opacity: 1; }
 }
 @keyframes pulse {
   0%, 100% { box-shadow: 0 0 0 0 #3B82F6; }
-  50% { box-shadow: 0 0 0 8px #3B82F633; }
+  50% { box-shadow: 0 0 0 12px #3B82F633; }
 }
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -112,13 +112,13 @@ body {
 .card {
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(30,58,138,0.08);
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition: box-shadow 0.25s cubic-bezier(.39,.575,.565,1.000), transform 0.18s cubic-bezier(.39,.575,.565,1.000), background 0.18s;
   background: #FFFFFF;
   color: #111827;
 }
 .card:hover {
-  box-shadow: 0 8px 32px rgba(30,58,138,0.15);
-  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(30,58,138,0.18);
+  transform: translateY(-2px) scale(1.015);
 }
 .card-title {
   font-weight: 700;
