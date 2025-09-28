@@ -13,25 +13,25 @@
   <div id="sidebar"></div>
   <main class="main-content p-4">
     <div class="container">
-      <h1 class="fw-bold mb-3">Welcome, <span id="officerName"></span>!</h1>
+      <h1 class="fw-bold mb-3 text-primary fade-in">Welcome, <span id="officerName"></span>!</h1>
       <div class="row g-4">
         <div class="col-md-6">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm scale-in">
             <div class="card-body">
-              <h5 class="card-title">Quick Stats</h5>
+              <h5 class="card-title text-primary">Quick Stats</h5>
               <div id="dashboardStats"></div>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm scale-in">
             <div class="card-body">
-              <h5 class="card-title">Officer Actions</h5>
+              <h5 class="card-title text-primary">Officer Actions</h5>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item"><a href="loan-requests.html" class="text-decoration-none"><i class="bi bi-list-check me-2"></i>Loan Requests</a></li>
-                <li class="list-group-item"><a href="approved-loans.html" class="text-decoration-none"><i class="bi bi-check2-circle me-2"></i>Approved Loans</a></li>
-                <li class="list-group-item"><a href="wallet-utilization.html" class="text-decoration-none"><i class="bi bi-wallet2 me-2"></i>Wallet Utilization</a></li>
-                <li class="list-group-item"><a href="loan-schemes.html" class="text-decoration-none"><i class="bi bi-file-earmark-text me-2"></i>Loan Schemes</a></li>
+                <li class="list-group-item"><a href="loan-requests.html" class="text-decoration-none text-secondary"><i class="bi bi-list-check me-2"></i>Loan Requests</a></li>
+                <li class="list-group-item"><a href="approved-loans.html" class="text-decoration-none text-success"><i class="bi bi-check2-circle me-2"></i>Approved Loans</a></li>
+                <li class="list-group-item"><a href="wallet-utilization.html" class="text-decoration-none text-primary"><i class="bi bi-wallet2 me-2"></i>Wallet Utilization</a></li>
+                <li class="list-group-item"><a href="loan-schemes.html" class="text-decoration-none accent-purple"><i class="bi bi-file-earmark-text me-2"></i>Loan Schemes</a></li>
                 <li class="list-group-item"><a href="#" onclick="logoutOfficer()" class="text-danger text-decoration-none"><i class="bi bi-box-arrow-right me-2"></i>Logout</a></li>
               </ul>
             </div>
@@ -40,5 +40,6 @@
       </div>
     </div>
   </main>
+  <script src="loading.js"></script>
 </body>
 </html>

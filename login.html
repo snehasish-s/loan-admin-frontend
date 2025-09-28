@@ -9,27 +9,28 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="animate.css">
   <script defer src="app.js"></script>
+  <script src="loading.js"></script>
 </head>
 <body class="bg-light">
-  <div class="container d-flex align-items-center justify-content-center min-vh-100">
-    <div class="card shadow-lg p-4 animate__animated animate__fadeInDown animate__faster" style="max-width: 400px; width: 100%;">
+  <main class="container d-flex align-items-center justify-content-center min-vh-100">
+    <div class="card shadow-lg p-4 animate__animated animate__fadeInDown animate__faster scale-in" style="max-width: 400px; width: 100%;">
       <div class="text-center mb-4">
-        <i class="bi bi-person-circle display-1 text-primary animate__animated animate__bounceIn animate__delay-1s"></i>
-        <h2 class="fw-bold mt-2 animate__animated animate__fadeInUp animate__delay-1s">Officer Login</h2>
+        <i class="bi bi-person-circle display-1 accent-gradient animate__animated animate__bounceIn animate__delay-1s"></i>
+        <h2 class="fw-bold mt-2 animate__animated animate__fadeInUp animate__delay-1s text-primary">Officer Login</h2>
       </div>
       <form id="loginForm" class="animate__animated animate__fadeIn animate__delay-2s">
         <div class="mb-3">
-          <label for="username" class="form-label">Username</label>
+          <label for="username" class="form-label text-secondary">Username</label>
           <input type="text" class="form-control animate__animated animate__pulse animate__delay-3s" id="username" required autofocus>
         </div>
         <div class="mb-3">
-          <label for="password" class="form-label">Password</label>
+          <label for="password" class="form-label text-secondary">Password</label>
           <input type="password" class="form-control animate__animated animate__pulse animate__delay-4s" id="password" required>
         </div>
         <div id="loginError" class="text-danger mb-2 animate__animated animate__shakeX" style="display:none;"></div>
         <button type="submit" class="btn btn-primary w-100 animate__animated animate__tada animate__delay-5s">Login</button>
       </form>
     </div>
-  </div>
+  </main>
 </body>
 </html>
